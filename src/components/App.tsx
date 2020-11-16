@@ -3,6 +3,14 @@ import { hot } from "react-hot-loader";
 
 const reactLogo = require("./../assets/img/react_logo.svg");
 import "./../assets/scss/App.scss";
+import Network from "../modules/NetworkStructure/lib/Network"
+
+//For development
+if (window) {
+    const w = window as any;
+    w.Network = Network;
+}
+
 
 class App extends React.Component<Record<string, unknown>, undefined> {
   public render() {

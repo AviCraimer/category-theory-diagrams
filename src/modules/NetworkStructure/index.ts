@@ -1,3 +1,5 @@
-import {v} from  "./lib/networkElements";
+import Network from  "./lib/Network";
 
-export default v;
+
+
+export default Network;
